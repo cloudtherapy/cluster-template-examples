@@ -3,7 +3,7 @@ entries:
   cluster-template:
   - annotations:
       catalog.cattle.io/namespace: fleet-default
-      catalog.cattle.io/type: cloudtherapy-cluster-template
+      catalog.cattle.io/type: cluster-template
     apiVersion: v1
     created: "2022-02-25T15:54:51.604663-08:00"
     description: CloudTherapy cluster template for rke2
