@@ -134,7 +134,7 @@ nodepools:
   datastore: "NetApp-HCI-Datastore-01"
 
   # vSphere datastore cluster for virtual machine
-  # datastoreCluster: ""
+  datastoreCluster: "NetApp-HCI-Datastore"
 
   # vSphere size of disk for docker VM (in MB)
   diskSize: "20480"
@@ -176,7 +176,7 @@ nodepools:
   # vappTransport: ""
 
   # vSphere IP/hostname for vCenter
-  # vcenter: ""
+  vcenter: "hci-vcenter.cetechllc.local"
 
   # vSphere Port for vCenter
   vcenterPort: 443
