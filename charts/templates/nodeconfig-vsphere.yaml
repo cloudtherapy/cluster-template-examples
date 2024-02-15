@@ -17,3 +17,4 @@ vappIpallocationpolicy: dhcp
 vappIpprotocol: IPV4
 vcenter: hci-vcenter.cetechllc.local
 vcenterPort: "443"
+pool: {{ $nodepool.pool }}
