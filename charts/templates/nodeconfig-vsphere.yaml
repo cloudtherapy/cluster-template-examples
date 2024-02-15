@@ -6,13 +6,13 @@ metadata:
   namespace: fleet-default
 cloneFrom: cetech-rancher
 contentLibrary: cetech-images
-cpuCount: 2
-creationType: vm
+cpuCount: "2"
+creationType: "vm"
 datacenter: TierPoint
 datastore: netApp-HCI-Datastore-01
 diskSize: "20480"
 memorySize: "2048"
-network: "VM Network"
+network: ["VM Network"]
 vappIpallocationpolicy: dhcp
 vappIpprotocol: IPV4
 vcenter: hci-vcenter.cetechllc.local
