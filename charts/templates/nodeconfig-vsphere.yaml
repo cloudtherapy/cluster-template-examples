@@ -1,5 +1,5 @@
 {{- if eq .Values.cloudprovider "vsphere" }}
-{{- range $index, $nodepool := .Values.nodepools }}
+{{- $nodepool := .Values.nodepools }}
 apiVersion: rke-machine-config.cattle.io/v1
 kind: VmwarevsphereConfig
 metadata:
