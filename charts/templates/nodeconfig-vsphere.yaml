@@ -10,10 +10,10 @@ cpuCount: 2
 creationType: vm
 datacenter: TierPoint
 datastore: netApp-HCI-Datastore-01
-diskSize: 204800
-memorySize: 2048
-network: VM Network
+diskSize: "20480"
+memorySize: "2048"
+network: "VM Network"
 vappIpallocationpolicy: dhcp
 vappIpprotocol: IPV4
 vcenter: hci-vcenter.cetechllc.local
-vcenterPort: 443
+vcenterPort: "443"
