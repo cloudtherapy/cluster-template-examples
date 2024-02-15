@@ -93,6 +93,6 @@ vappTransport: {{ $nodepool.vappTransport }}
 vcenter: {{ $nodepool.vcenter }}
 vcenterPort: {{ $nodepool.vcenterPort }}
 {{- end }}
-{{- end }}
+
 
 
