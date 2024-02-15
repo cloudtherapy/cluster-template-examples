@@ -116,7 +116,7 @@ nodepools:
   # cloudinit: ""
 
   # If you choose to clone from a content library template specify the name of the library
-  # contentLibrary: ""
+  contentLibrary: "cetech-images"
 
   # vSphere CPU number for docker VM
   cpuCount: "2"
@@ -128,10 +128,10 @@ nodepools:
   # customAttribute: ["200=mycustom value"]
 
   # vSphere datacenter for virtual machine
-  # datacenter: ""
+  datacenter: "TierPoint"
 
   # vSphere datastore for virtual machine
-  # datastore: ""
+  datastore: "NetApp-HCI-Datastore-01"
 
   # vSphere datastore cluster for virtual machine
   # datastoreCluster: ""
@@ -149,7 +149,7 @@ nodepools:
   # memorySize: "2048"
 
   # vSphere network where the virtual machine will be attached
-  # network: ""
+  network: "VM Network"
 
   # vSphere resource pool for docker VM
   # pool: ""
