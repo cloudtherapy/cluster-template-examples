@@ -146,7 +146,7 @@ nodepools:
   # hostsystem: ""
 
   # vSphere size of memory for docker VM (in MB)
-  # memorySize: "2048"
+  memorySize: "4096"
 
   # vSphere network where the virtual machine will be attached
   network: "VM Network"
@@ -158,16 +158,16 @@ nodepools:
   sshPort: "22"
 
   # If using a non-B2D image the uploaded keys will need chown'ed, defaults to staff e.g. docker:staff
-  sshUserGroup: staff
+  # sshUserGroup: staff
 
   # vSphere tag id e.g. urn:xxx
   # tag: ["urn:xxx"]
 
   # 'vSphere vApp IP allocation policy. Supported values are: dhcp, fixed, transient and fixedAllocated'
-  # vappIpallocationpolicy: ""
+  vappIpallocationpolicy: "dhcp"
 
   # 'vSphere vApp IP protocol for this deployment. Supported values are: IPv4 and IPv6'
-  # vappIpprotocol: ""
+  vappIpprotocol: "IPv4"
 
   # vSphere vApp properties
   # vappProperty: []
