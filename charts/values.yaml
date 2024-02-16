@@ -99,7 +99,7 @@ nodepools:
   # machineDeploymentAnnotations: {}
 
   # specify nodepool name
-  #name: vsphere-nodepool-1
+  name: vsphere-nodepool-1
 
   # vSphere vm configuration parameters (used for guestinfo)
   # cfgparam: []
