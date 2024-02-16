@@ -9,7 +9,7 @@ contentLibrary: cetech-images
 cpuCount: "2"
 creationType: "vm"
 datacenter: TierPoint
-datastore: netApp-HCI-Datastore-01
+datastore: NetApp-HCI-Datastore-01
 diskSize: "20480"
 memorySize: "2048"
 network: ["VM Network"]
@@ -17,4 +17,4 @@ vappIpallocationpolicy: dhcp
 vappIpprotocol: IPV4
 vcenter: hci-vcenter.cetechllc.local
 vcenterPort: "443"
-pool: {{ $nodepool.pool }}
+pool: vsphere-nodepool-1
