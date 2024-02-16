@@ -71,7 +71,7 @@ questions:
     description: "Custom monitoring chart values"
     type: multiline
     group: "Monitoring"
-- variable: nodepools.0.name
+- variable: nodepools.name
   default:
   description: "Specify nodepool name"
   type: string
@@ -79,7 +79,7 @@ questions:
   required: true
   show_if: cloudprovider=amazonec2 || cloudprovider=vsphere || cloudprovider=azure || cloudprovider=digitalocean || cloudprovider=harvester
   group: "Nodepools"
-- variable: nodepools.0.quantity
+- variable: nodepools.quantity
   default: 1
   description: "Specify node count"
   type: int
@@ -87,26 +87,26 @@ questions:
   show_if: cloudprovider=amazonec2 || cloudprovider=vsphere || cloudprovider=azure || cloudprovider=digitalocean || cloudprovider=harvester
   label: "Node count"
   group: "Nodepools"
-- variable: nodepools.0.etcd
+- variable: nodepools.etcd
   default: true
   label: etcd
   type: boolean
   show_if: cloudprovider=amazonec2 || cloudprovider=vsphere || cloudprovider=azure || cloudprovider=digitalocean || cloudprovider=harvester
   group: "Nodepools"
-- variable: nodepools.0.worker
+- variable: nodepools.worker
   default: true
   label: worker
   type: boolean
   show_if: cloudprovider=amazonec2 || cloudprovider=vsphere || cloudprovider=azure || cloudprovider=digitalocean || cloudprovider=harvester
   group: "Nodepools"
-- variable: nodepools.0.controlplane
+- variable: nodepools.controlplane
   label: controlplane
   default: true
   type: boolean
   show_if: cloudprovider=amazonec2 || cloudprovider=vsphere || cloudprovider=azure || cloudprovider=digitalocean || cloudprovider=harvester
   group: "Nodepools"
 # vsphere
-- variable: nodepools.0.vcenter
+- variable: nodepools.vcenter
   label: "vSphere IP/hostname"
   default: ""
   type: hostname
@@ -114,7 +114,7 @@ questions:
   required: true
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.datacenter
+- variable: nodepools.datacenter
   label: "Vsphere Datacenter"
   default: ""
   type: hostname
@@ -122,7 +122,7 @@ questions:
   required: true
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.datastore
+- variable: nodepools.datastore
   label: "Vsphere Datastore"
   default: ""
   type: string
@@ -130,7 +130,7 @@ questions:
   required: true
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.datastoreCluster
+- variable: nodepools.datastoreCluster
   label: "Vsphere DatastoreCluster"
   default: ""
   type: string
@@ -138,49 +138,49 @@ questions:
   required: true
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.diskSize
+- variable: nodepools.diskSize
   label: "Disk Size"
   default: "20480"
   type: string
   description: "vSphere size of disk for docker VM (in MB)"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.memorySize
+- variable: nodepools.memorySize
   label: "Memory Size"
   default: "2048"
   type: string
   description: "vSphere size of memory for docker VM (in MB)"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.network
+- variable: nodepools.network
   label: "Network"
   default: ""
   type: string
   description: "vSphere network where the virtual machine will be attached"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.pool
+- variable: nodepools.pool
   label: "Resource Pool"
   default: ""
   type: string
   description: "vSphere resource pool for docker VM"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.sshPort
+- variable: nodepools.sshPort
   label: "SSH Port"
   default: "22"
   type: string
   description: "If using a non-B2D image you can specify the ssh port"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.sshUserGroup
+- variable: nodepools.sshUserGroup
   label: "SSH User Group"
   default: docker:staff
   type: hostname
   description: "If using a non-B2D image the uploaded keys will need chown'ed, defaults to staff e.g. docker:staff"
   show_if: cloudprovider=vsphere
   group: "Nodepools"
-- variable: nodepools.0.vappIpallocationpolicy
+- variable: nodepools.vappIpallocationpolicy
   label: "IP allocation policy"
   default: ""
   type: enum
